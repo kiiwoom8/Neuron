@@ -1,0 +1,18 @@
+\documentclass[10pt, a4paper]{article}
+\usepackage{tikz, incgraph, hyperref}
+\igrset{border=4cm}
+\usetikzlibrary{positioning}
+\tikzset{
+    default/.append style={
+            draw,
+            rectangle,
+            rounded corners,
+            minimum width=2cm,
+            minimum height=1cm
+        },
+    default_arrow/.append style={
+            -latex,
+            shorten >=5pt,
+            shorten <=5pt
+        }
+}

@@ -1,0 +1,16 @@
+\node[default](neuron){Neuron};
+
+\node[default, right =of neuron](dend){\href{https://en.wikipedia.org/wiki/Dendrite}{Dendrites}};
+\node[default, right=of dend](axon){Axon};
+\node[default, below=of dend](spine){\href{https://en.wikipedia.org/wiki/Dendritic_spine}{Spine}};
+\node[default, below=of spine](actin){\href{https://en.wikipedia.org/wiki/Actin}{Actin}};
+\node[default, below=of actin, align=center](protein){Protein\\(Memory)};
+\node[default, right=of spine](nt){\href{https://en.wikipedia.org/wiki/Neurotransmitter}{Neurostransmitter}};
+\node[default, below=of nt](cs){\href{https://en.wikipedia.org/wiki/Cell_signaling}{Cell Signaling}};
+
+\node[default, right=of nt](synapse){Synapse};
+\node[default, right=of synapse](receptor){Receptor};
+\node[default, right=of receptor](spine2){Spine};
+\node[default, left=of protein](gene){Gene};
+
+\node[above, above=0pt of nt]{\textcolor{red}{Important}};
