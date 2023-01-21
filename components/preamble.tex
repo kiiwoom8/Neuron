@@ -1,14 +1,15 @@
 \documentclass[10pt, a4paper]{article}
-\usepackage{tikz, incgraph, hyperref}
+\usepackage{tikz, mhchem, incgraph, hyperref, romannum}
 \igrset{border=4cm}
-\usetikzlibrary{positioning}
+\usetikzlibrary{positioning, calc}
 \tikzset{
     default/.append style={
             draw,
             rectangle,
             rounded corners,
             minimum width=2cm,
-            minimum height=1cm
+            minimum height=1cm,
+            align=center
         },
     default_arrow/.append style={
             -latex,

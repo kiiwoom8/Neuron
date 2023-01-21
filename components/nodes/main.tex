@@ -2,18 +2,28 @@
 
 \node[default, right =of neuron](dend){\href{https://en.wikipedia.org/wiki/Dendrite}{Dendrites}};
 \node[default, right=of dend](axon){Axon};
+\node[default, right=of axon](ps){Postsynaptic Neuron};
 \node[default, below=of dend](spine){\href{https://en.wikipedia.org/wiki/Dendritic_spine}{Spine}};
 \node[default, below=of spine](actin){\href{https://en.wikipedia.org/wiki/Actin}{Actin}};
-\node[default, below=of actin, align=center](protein){Protein\\(Memory)};
-\node[default, right=of spine](nt){\href{https://en.wikipedia.org/wiki/Neurotransmitter}{Neurostransmitter}};
-\node[default, below=of nt](glu){\href{https://en.wikipedia.org/wiki/Glutamate_(neurotransmitter)}{Glutamate}};
-% \node[default, below=of nt](cs){\href{https://en.wikipedia.org/wiki/Cell_signaling}{Cell Signaling}};
+\node[default, below=of actin](protein){Protein\\(Memory)};
+\node[default, right=of spine](nt){\href{https://en.wikipedia.org/wiki/Neurotransmitter}{Neurostransmitter (Glutamate)}};
 
 \node[default, right=of nt](synapse){\href{https://en.wikipedia.org/wiki/Synapse}{Synapse}};
 \node[default, right=of synapse](receptor){Receptor};
-\node[default, below=of receptor](nmda){\href{https://en.wikipedia.org/wiki/NMDA_receptor}{NMDA}};
-\node[default, right=of nmda](ampa){\href{https://en.wikipedia.org/wiki/NMDA_receptor}{AMPA}};
+\node[default, below=of receptor](nmda){\href{https://en.wikipedia.org/wiki/NMDA_receptor}{NMDAR}};
+\node[default, right=of nmda](ampa){\href{https://en.wikipedia.org/wiki/NMDA_receptor}{AMPAR}};
 \node[default, right=of receptor](spine2){Spine};
 \node[default, left=of protein](gene){Gene};
 
 \node[above, above=0pt of nt]{\textcolor{red}{Important}};
+
+\node[default, below=of ampa](na){\ce{Na^{+}}};
+\node[default, below=of nmda](mg){\ce{Mg^{2+}}};
+\node[default, below left=of nmda](ca){\ce{Ca^{2+}}};
+\node[default, below=of ca](cm){\href{https://en.wikipedia.org/wiki/Calmodulin}{Calmodulin}};
+\node[default, below=of cm](pkc){\href{https://en.wikipedia.org/wiki/Protein_kinase_C}{PKC}};
+\node[default, left=of pkc](cmk2){\href{https://en.wikipedia.org/wiki/Ca2%2B/calmodulin-dependent_protein_kinase_II}{CaMK\Romannum{2}}};
+\node[default, right=of pkc](tk){\href{https://en.wikipedia.org/wiki/Tyrosine_kinase}{Tyrosine Kinase}};
+\node[default, below=of pkc](rgs){\href{https://en.wikipedia.org/wiki/Retrograde_signaling}{Retrograde Signaling}};
+
+\node[left=of gene](space){};
