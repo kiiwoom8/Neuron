@@ -13,7 +13,12 @@
 \node[below=of sc](space3){};
 \node[right=of mtl](space4){};
 \node(space) at(space4 |- space1){};
-\draw[default_arrow, shorten <=0pt](space1.center) to (space.center) |- node[exp, align=left, right](em){Episodic Memory\\Memory Consolidation} (mtl);
+
+\draw[default_arrow, shorten <=0pt](space1.center) to (space.center) node[right, xshift=10pt, scale=.2]
+{\includegraphics{images/brain.png}} |-
+node[exp, align=left, right]
+(em){Episodic Memory\\Memory Consolidation} (mtl);
+
 \draw(hpa.south)+(0,-5pt) to (space1.center) node[exp]{Hormone};
 \draw[default_arrow, shorten <=0pt](space2.center) node[exp]{Conditioned Reflex\\Motor Learning} to (cerebellum);
 \draw[default_arrow, shorten <=0pt] (space3.center) node[exp]{Memory Priming\\Save Memory (0.2 $\sim$ 0.5s)} to (sc);
