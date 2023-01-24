@@ -1,0 +1,12 @@
+\node[default](amg){Amygdala};
+\node[default, below=of amg](cerebellum){Cerebellum};
+\node[default, left=of cerebellum](hpa){\href{https://en.wikipedia.org/wiki/Hypothalamic%E2%80%93pituitary%E2%80%93adrenal_axis}{HPA axis}};
+\node[default, right=of cerebellum](sc){Sensory Cortex};
+\node[default, right=of amg](mtl){MTL\\(Hippocampus)};
+\node[default, above right=of amg](pfc){PFC};
+\node[below right=of sc](space){};
+\node[below=of hpa](space1){};
+\node[below=of cerebellum](space2){};
+\node[below=of sc](space3){};
+
+\node[left=.5cm of hpa, scale=.3]{\includegraphics{images/hpa.png}};

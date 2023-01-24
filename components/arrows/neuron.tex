@@ -14,7 +14,10 @@
 \draw[default_arrow](na) to (ampa);
 \draw[default_arrow](nmda) to (mg);
 \draw[default_arrow](ca) to (nmda);
-\draw[default_arrow, latex-latex](ca) to (cm);
+
+% \draw[default_arrow, latex-latex](ca) to (cm);
+\draw[shorten >=5pt, shorten <=5pt](ca) edge node[circle, fill=white]{+} (cm);
+
 \draw[default_arrow](cm) to (cmk2);
 \draw[default_arrow](cm) to (pkc);
 \draw[default_arrow](cm) to (tk);
