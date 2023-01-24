@@ -22,4 +22,11 @@
 \draw[default_arrow](wm.east) to (ce);
 \draw[default_arrow, latex-](sm.south) |- (ce);
 \draw[default_arrow](ce) |- (em.east);
-\draw[default_arrow](ce.east) -- ++(1,0) |- (ce |- pm) -- (pm);
+\draw[default_arrow](ce.north)++(1,0) |- (pm);
+
+\node[default, right=of ce](vswm){Visuo-Spatial Working Memory};
+\node[default, above=of vswm.west, anchor=south west](pl){Phonological Loop};
+\node[default, below=of vswm.west, anchor=north west](eb){Episodic Buffer};
+\draw(ce.east)to (vswm);
+\draw(ce.east) to (pl.west);
+\draw(ce.east) to (eb.west);
