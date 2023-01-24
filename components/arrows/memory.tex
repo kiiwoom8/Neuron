@@ -3,6 +3,8 @@
 \draw[default_arrow, latex-latex](amg) to (cerebellum);
 \draw[default_arrow, latex-latex](amg) to (sc);
 \draw[default_arrow, latex-latex](amg) to (pfc);
+\draw(pfc.east)++(0,10pt)+(5pt,0) -- ++(1,0) node[exp, right]{Dorsal: Working Memory, Prediction};
+\draw(pfc.east)++(0,-10pt)+(5pt,0) -- ++(1,0) node[exp, right]{Ventral: Semantic Memory, Deletion};
 % --------------------------------------------------------------------------------------------------
 \node[below=of hpa](space1){};
 \node[below=of cerebellum](space2){};
