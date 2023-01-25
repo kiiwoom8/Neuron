@@ -23,3 +23,42 @@
 \draw[default_arrow, latex-latex](cc2) to (mtl3);
 \draw($(aa2.south west)+(-15pt,-15pt)$) -- ($(cc2.south east)+(15pt,-15pt)$)
 -- ($(cc2.north east)+(15pt,15pt)$) -- ($(aa2.north west)+(-15pt,15pt)$) -- node[left]{Neocortex} cycle;
+
+\draw[default_arrow, latex-latex](aa3) to (mtl4);
+\draw[default_arrow, latex-latex](bb3) to (mtl4);
+\draw[default_arrow, latex-latex](cc3) to (mtl4);
+\draw[default_arrow, -](aa3) to (bb3);
+\draw[default_arrow, -](bb3) to (cc3);
+\draw[color=green] (aa3) circle (1.3cm);
+\draw[color=green] (bb3) circle (1.3cm);
+\draw[color=green] (cc3) circle (1.3cm);
+
+\draw[default_arrow, -](aa4) to (bb4);
+\draw[default_arrow, -](bb4) to (cc4);
+\draw[color=green] (aa4) circle (1.3cm);
+\draw[color=green] (bb4) circle (1.3cm);
+\draw[color=green] (cc4) circle (1.3cm);
+
+\draw[color=gray](con.west) -| ($(aa3.west)+(-15pt,0)$) |- ($(mtl5.south)+(0,-15pt)$) -| ($(cc4.east)+(15pt,0)$) |- (con.east);
+
+\draw[default_arrow](retrieval) to (b5);
+\draw[default_arrow](b5) to (bb5);
+\draw[default_arrow, -](aa5) to (bb5);
+\draw[default_arrow, -](bb5) to (cc5);
+\draw[default_arrow](bb5) to (mtl6);
+\draw[color=green](aa5) circle (1.3cm);
+\draw[color=green](bb5) circle (1.3cm);
+\draw[color=green](cc5) circle (1.3cm);
+\draw($(aa5.south west)+(-15pt,-15pt)$) -- ($(cc5.south east)+(15pt,-15pt)$)
+-- ($(cc5.north east)+(15pt,15pt)$) -- ($(aa5.north west)+(-15pt,15pt)$) -- node[left]{Neocortex} cycle;
+
+\draw[default_arrow, -](aa6) to (bb6);
+\draw[default_arrow, -](bb6) to (cc6);
+\draw[-](aa6) to (mtl7);
+\draw[-](bb6) to (mtl7);
+\draw[-](cc6) to (mtl7);
+\draw[color=green](aa6) circle (1.3cm);
+\draw[color=green](bb6) circle (1.3cm);
+\draw[color=green](cc6) circle (1.3cm);
+\draw($(aa6.south west)+(-15pt,-15pt)$) -- ($(cc6.south east)+(15pt,-15pt)$)
+-- ($(cc6.north east)+(15pt,15pt)$) -- ($(aa6.north west)+(-15pt,15pt)$) -- node[left]{Neocortex} cycle;

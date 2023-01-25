@@ -6,7 +6,7 @@
 \node[default, below=of b](bb){B};
 \node[default, below=of c](cc){C};
 \node[default, below=of bb](mtl2){MTL};
-
+% ------------------------------------------------------------
 \node[default, right=10cm of encoding](cohesion){Cohesion};
 \node[default, below=of cohesion](b2){B};
 \node[default, left=of b2](a2){A};
@@ -15,3 +15,32 @@
 \node[default, below=of b2](bb2){B};
 \node[default, below=of c2](cc2){C};
 \node[default, below=of bb2](mtl3){MTL};
+% ------------------------------------------------------------
+\node[default_inv, right=10cm of cohesion](s1){};
+\node[default_inv, below=of s1](s2){};
+\node[default, below=of s2](bb3){B};
+\node[default, left=of bb3](aa3){A};
+\node[default, right=of bb3](cc3){C};
+\node[default, below=of bb3](mtl4){MTL};
+% ------------------------------------------------------------
+\node[default_inv, right=8cm of s1](s3){};
+\node[default_inv, below=of s3](s4){};
+\node[default, below=of s4](bb4){B};
+\node[default, left=of bb4](aa4){A};
+\node[default, right=of bb4](cc4){C};
+\node[default, below=of bb4](mtl5){MTL};
+\node[default](con) at($(s1)!0.5!(s3)$){Consolidation};
+% ------------------------------------------------------------
+\node[default, right=10cm of s3](retrieval){Retrieval};
+\node[default, below=of retrieval](b5){B};
+\node[default, below=of b5](bb5){B};
+\node[default, left=of bb5](aa5){A};
+\node[default, right=of bb5](cc5){C};
+\node[default, below=of bb5](mtl6){MTL};
+% ------------------------------------------------------------
+\node[default_inv, right=10cm of retrieval](s5){};
+\node[default_inv, below=of s5](s6){};
+\node[default, below=of s6](bb6){B};
+\node[default, left=of bb6](aa6){A};
+\node[default, right=of bb6](cc6){C};
+\node[default, below=of bb6](mtl7){MTL};
