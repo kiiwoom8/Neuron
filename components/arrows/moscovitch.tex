@@ -1,0 +1,25 @@
+\draw[default_arrow](encoding) to (a);
+\draw[default_arrow](encoding) to (b);
+\draw[default_arrow](encoding) to (c);
+\draw[default_arrow](a) to (aa);
+\draw[default_arrow](b) to (bb);
+\draw[default_arrow](c) to (cc);
+\draw[default_arrow](aa) to (mtl2);
+\draw[default_arrow](bb) to (mtl2);
+\draw[default_arrow](cc) to (mtl2);
+\draw($(aa.south west)+(-15pt,-15pt)$) -- ($(cc.south east)+(15pt,-15pt)$)
+-- ($(cc.north east)+(15pt,15pt)$) -- ($(aa.north west)+(-15pt,15pt)$) -- node[left]{Neocortex} cycle;
+
+\draw[default_arrow](cohesion) to (a2);
+\draw[default_arrow](cohesion) to (b2);
+\draw[default_arrow](cohesion) to (c2);
+\draw[default_arrow](a2) to (aa2);
+\draw[default_arrow](b2) to (bb2);
+\draw[default_arrow](c2) to (cc2);
+\draw[default_arrow, -](aa2) to (bb2);
+\draw[default_arrow, -](bb2) to (cc2);
+\draw[default_arrow, latex-latex](aa2) to (mtl3);
+\draw[default_arrow, latex-latex](bb2) to (mtl3);
+\draw[default_arrow, latex-latex](cc2) to (mtl3);
+\draw($(aa2.south west)+(-15pt,-15pt)$) -- ($(cc2.south east)+(15pt,-15pt)$)
+-- ($(cc2.north east)+(15pt,15pt)$) -- ($(aa2.north west)+(-15pt,15pt)$) -- node[left]{Neocortex} cycle;
